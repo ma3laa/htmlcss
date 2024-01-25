@@ -34,6 +34,44 @@
     Values are what is entered to apply the desired characteristic, such as italic.
 
 
+     1 Element selectors:
+     2 ID selectors - singular styling
+     3 Class selectors - can style multiple under same class
+     4 Descendant selectors - check index pathing for example ( does descend from body>main>div, also check style.css for more info)
 
+
+    Under index.html 
+
+    <head>
+        <link rel = stylesheet" href="css/default.css">
+    </head>
+
+    <body>
+      1  Hello World!
+      2 <div id="essential">Hello World!</div>
+      3 <div class="vital">Hello World!</div>
+      4 <div>Hello world!</div>
+    </body>
+
+
+    Under css/default.css
+
+    2 #essential {
+    3 .vital {
+   1 body {
+      color: red;
+    }
+
+    Element tags (continued)
+
+    DIV <div id="container"></div>
+    This divides the webpage into identifiable subsections.
+    The id attribute is essentially required.
+
+    SPAN <span class="unique"></span>
+    This allows for CSS formatting distinct from surrounding text.
+    Adding a class attribute allows for styling.
+
+    
 
 -->
