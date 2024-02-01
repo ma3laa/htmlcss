@@ -1,0 +1,33 @@
+h2 {
+    color: white;
+    background-color: red;
+    font-family: Arial, "Comic Sans", Calibri;
+    font-size: 3em;
+    text-align: center; /*This will help align everything into the center*/
+    
+}
+
+h1{ 
+    background-color: white;
+}
+
+#container {
+    color: yellow;
+}
+
+.accent {
+    background-color: yellow;
+    color: gray;
+}
+
+body main div {
+    color: white;
+}
+
+
+
+footer {
+    background-color: rgb(10, 228, 145);
+
+    color: #bf22d7;
+}
