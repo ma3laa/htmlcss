@@ -1,0 +1,23 @@
+header img {
+    width: 100%; /*This stretches the image across the viewport.*/
+    height: auto; /*The height will chnage based on the size of the viewport.*/
+}
+
+nav {
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+main {
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+}
+
+footer { 
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+}
