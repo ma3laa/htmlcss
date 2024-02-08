@@ -1,11 +1,18 @@
+body {
+    background-image: linear-gradient(white, black);
+}
+
 header img {
     width: 100%; /*This stretches the image across the viewport.*/
     height: auto; /*The height will chnage based on the size of the viewport.*/
+    max-width: 500px;
 }
 
 nav {
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
+    border-radius: 1.0em; /*This rounds the corners of elements.*/
+    margin-bottom: 1em; /* This places some space between elements.*/
 }
 
 nav ul li{
@@ -13,13 +20,14 @@ nav ul li{
 }
 
 main {
-    margin-top: 1em;
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
+    margin-bottom: 1em; /* This places some space between elements.*/
+    border-radius: 1.0em; /*This rounds the corners of elements.*/
 }
 
 footer { 
-    margin-top: 1em;
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
+    border-radius: 1.0em; /*This rounds the corners of elements.*/
 }
