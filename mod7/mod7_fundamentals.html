@@ -1,0 +1,48 @@
+<!-- 
+    Responsive Design:
+        The viewport meta element is used to deliver websites that are optimised to the client device.
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    Media Queries:
+        Media queries allow different CSS styles on the same page based on the size of the viewport and 
+        the media upon it is viewed.
+        They are itilised with the media attribute within the linkk elements.
+
+        <link rel="stylesheet" href="css/style.css" media="screen">
+                                                           "print" 
+                                                           "speech"
+        
+        Screen media typically include smartphones, tablets, and computer monitors.
+        Print media is used for printing a webpage.
+        Speech media is used for reading the page out loud using screen readers.
+
+        Media queries can also be specified using the CSS files themselves instead.
+        As pages become more complex, this method becomes preferred.
+
+        @media (screen/speech/print) {
+
+        }
+    
+        Media queries have numerous features that can specify behaviour changes based on the size (or orientation)
+        of the screen or viewport.
+
+        @media screen and (min-width:481px) {
+            nav li { display: inline;}
+        }
+
+        max-device-height - Changes are made based on the pixel height of the screen
+        min-device-height
+
+        max-device-width - Changes are made based on the pixel width of the screen
+        min-device-width
+
+        max-height - Viewport height accounts for changes
+        min-height
+
+        max-width - Viewport width accounts for changes
+        min-width
+
+        orientation - Landscape or portrait
+
+        
+    -->
