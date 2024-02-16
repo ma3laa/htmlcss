@@ -9,17 +9,38 @@ header img {
 }
 
 nav {
+    background-color: white;
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
     border-radius: 1.0em; /*This rounds the corners of elements.*/
     margin-bottom: 1em; /* This places some space between elements.*/
+
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 nav ul li{
-    list-style-type: none;
+    background-color: black;
+    padding: 1em;
+    min-width: 12%;
+    margin: 0.25em;
+    list-style-type: none; /*This removes bullet points.*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /*This removes the underline from the hyperlink.*/
+    
 }
 
 main {
+    background-color: white;
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
     margin-bottom: 1em; /* This places some space between elements.*/
@@ -27,7 +48,20 @@ main {
 }
 
 footer { 
+    background-color: white;
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
     border-radius: 1.0em; /*This rounds the corners of elements.*/
 }
+
+/*Begin mobile.*/
+
+@media screen and (max-width: 640px) {
+
+    nav ul li {
+        border-radius: 1em;
+
+    }
+}
+
+/*End mobile.*/
