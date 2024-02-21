@@ -65,3 +65,40 @@ footer {
 }
 
 /*End mobile.*/
+
+/*Begin Tablet.*/
+
+@media screen and (min-width: 641px) {
+
+    nav ul li {
+        display: inline-block; /*This lists items horizontally and allows them to stretch.*/
+        border-radius: 1em;
+    }
+}
+
+/*End Tablet.*/
+
+/*Begin Desktop.*/
+
+@media screen and (min-width: 961px) {
+
+    
+    header img {
+        width: auto;
+        height: 5em;
+    }
+
+    nav {
+        margin-top: -5.1em; /*This moves the nav element above where it would normally be.*/
+        width: 60%;
+        float: right; /*This floats the nav elements to the right side of the page.*/
+    }
+
+
+    nav ul li {
+        display: inline-block; /*This lists items horizontally and allows them to stretch.*/
+        border-radius: 1em;
+    }
+}
+
+/*End Desktop.*/
