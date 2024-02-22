@@ -39,12 +39,52 @@ nav ul li a {
     
 }
 
+figure {
+    text-align: center;
+    background-color: white;
+}
+
+figure img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
 main {
     background-color: white;
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
     margin-bottom: 1em; /* This places some space between elements.*/
     border-radius: 1.0em; /*This rounds the corners of elements.*/
+}
+
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    border-right: 3px solid black;
+}
+
+main div .center {
+    padding: 10px;
+    width: 35%;
+}
+
+main div .right {
+    float: right;
+    padding: 10px;
+    width: 30%;
+    border-left: 3px solid black;
 }
 
 footer { 
@@ -62,6 +102,14 @@ footer {
         border-radius: 1em;
 
     }
+    
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
 }
 
 /*End mobile.*/
@@ -73,6 +121,10 @@ footer {
     nav ul li {
         display: inline-block; /*This lists items horizontally and allows them to stretch.*/
         border-radius: 1em;
+    }
+
+    .desktop {
+        display: none;
     }
 }
 
