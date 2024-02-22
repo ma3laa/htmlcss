@@ -1,0 +1,43 @@
+<!-- 
+    Figure element and Hiding class:
+
+    The figure element is a distinct section for image elements. They can include figcaption element to entitle a group of images in a figure element.
+    Sometimes elements such as these are too large for a mobile viewport. Our example provides for a figure element to be displayed for tablets and desktops.
+    In this example, we will use the "display:none;" style with the help of classes in CSS to hide items from certain viewports.
+
+    ".mobile {
+        display: none;
+    }"
+
+    One, Two, and Three Column Layouts:
+
+    The mobile first strategy involves keeping the page simple. Sometimes this means leaving out content, such as two of the columns.
+    We gradually add in content for tablets. Here we will use a two-column layout. 
+    Desktops might have a three column layout. We will use one here.
+
+    <div class="row>
+	    <div class="column left desktop">
+            <aside>This is the left column.</aside>
+        </div>
+        
+	    <div class="column center">
+            <article>This is the home page.<section></section></article>
+        </div>
+
+	    <div class="column right tablet">
+            <aside>This is the right column.</aside>
+        </div>
+    </div>
+
+    It is important to note that the website has a three-column layout in every viewport.
+    However, in two of the viewports, columns are hidden from view as is done with the figure element.
+    The same classes are reused to hide multiple elements.
+
+    Import Style Sheets:
+
+    The style.css is quite long now. Yet it does not have to be.
+    We can break up the CSS rules into multiple files and import them into style.css.
+    The "@import rule" must be placed at the top of the style.css page in order to fetch what was placed in the other pages.
+
+    "@import url("mobilestyle.css")"
+-->
