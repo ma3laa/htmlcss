@@ -9,8 +9,6 @@ header img {
 }
 
 nav {
-    background-color: white;
-    border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;
     border-radius: 1.0em; /*This rounds the corners of elements.*/
     margin-bottom: 1em; /* This places some space between elements.*/
@@ -51,9 +49,12 @@ figure img {
 }
 
 main {
-    background-color: white;
+    /*background-color: white;
     border-top: solid 0.3em black;
-    border-bottom: solid 0.3em black;
+    border-bottom: solid 0.3em black;*/
+
+    background-image: linear-gradient(white, black);
+
     margin-bottom: 1em; /* This places some space between elements.*/
     border-radius: 1.0em; /*This rounds the corners of elements.*/
 }
@@ -72,19 +73,20 @@ main div .left {
     float: left;
     width: 20%;
     padding: 10px;
-    border-right: 3px solid black;
 }
 
 main div .center {
     padding: 10px;
-    width: 35%;
+    width: 45%;
+
+    border-left: 0.3em solid black;
+    border-right: 0.3em solid black;
 }
 
 main div .right {
     float: right;
     padding: 10px;
     width: 30%;
-    border-left: 3px solid black;
 }
 
 footer { 
