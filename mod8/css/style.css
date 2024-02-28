@@ -77,10 +77,6 @@ main div .left {
 
 main div .center {
     padding: 10px;
-    width: 45%;
-
-    border-left: 0.3em solid black;
-    border-right: 0.3em solid black;
 }
 
 main div .right {
@@ -128,6 +124,13 @@ footer {
     .desktop {
         display: none;
     }
+
+    main div .center {
+        padding: 10px;
+        width: 45%;
+
+        border-right: 0.3em solid black;
+    }
 }
 
 /*End Tablet.*/
@@ -142,17 +145,32 @@ footer {
         height: 5em;
     }
 
+    .desktop{
+        display: block;
+    }
+
+
     nav {
         margin-top: -5.1em; /*This moves the nav element above where it would normally be.*/
         width: 60%;
         float: right; /*This floats the nav elements to the right side of the page.*/
     }
 
-
     nav ul li {
         display: inline-block; /*This lists items horizontally and allows them to stretch.*/
         border-radius: 1em;
     }
+
+    main div .center {
+        padding: 10px;
+        width: 45%;
+
+        border-left: 0.3em solid black;
+        border-right: 0.3em solid black;
+    }
+        
+    
+    
 }
 
 /*End Desktop.*/
