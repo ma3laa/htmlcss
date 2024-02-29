@@ -76,13 +76,14 @@ main div .left {
 }
 
 main div .center {
+    width: 64%;
     padding: 10px;
 }
 
 main div .right {
     float: right;
     padding: 10px;
-    width: 30%;
+    width: 20%;
 }
 
 footer { 
@@ -126,8 +127,7 @@ footer {
     }
 
     main div .center {
-        padding: 10px;
-        width: 45%;
+        width: 66%;
 
         border-right: 0.3em solid black;
     }
@@ -163,7 +163,7 @@ footer {
 
     main div .center {
         padding: 10px;
-        width: 45%;
+        width: 40%;
 
         border-left: 0.3em solid black;
         border-right: 0.3em solid black;
