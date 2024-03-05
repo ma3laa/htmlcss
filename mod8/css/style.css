@@ -53,8 +53,8 @@ main {
     border-top: solid 0.3em black;
     border-bottom: solid 0.3em black;*/
 
-    background-image: linear-gradient(white, black);
-
+    background-image: linear-gradient(white, gray, black);
+    min-height: 400px;
     margin-bottom: 1em; /* This places some space between elements.*/
     border-radius: 1.0em; /*This rounds the corners of elements.*/
 }
@@ -75,15 +75,10 @@ main div .left {
     padding: 10px;
 }
 
-main div .center {
-    width: 64%;
-    padding: 10px;
-}
-
 main div .right {
     float: right;
-    padding: 10px;
-    width: 20%;
+    padding-left: 0.6em;
+    width: 25%;
 }
 
 footer { 
@@ -127,8 +122,8 @@ footer {
     }
 
     main div .center {
-        width: 66%;
-
+        width: 52%;
+        padding: 10px;
         border-right: 0.3em solid black;
     }
 }
@@ -163,7 +158,7 @@ footer {
 
     main div .center {
         padding: 10px;
-        width: 40%;
+        width: 45%;
 
         border-left: 0.3em solid black;
         border-right: 0.3em solid black;
