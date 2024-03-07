@@ -25,9 +25,9 @@ nav ul {
 
 nav ul li{
     background-color: black;
-    padding: 1em;
-    min-width: 12%;
-    margin: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0.75em;
     list-style-type: none; /*This removes bullet points.*/
 }
 
@@ -82,10 +82,9 @@ main div .right {
 }
 
 footer { 
-    background-color: white;
-    border-top: solid 0.3em black;
-    border-bottom: solid 0.3em black;
+    background-image: linear-gradient(to right, white, grey);
     border-radius: 1.0em; /*This rounds the corners of elements.*/
+    text-align: center;
 }
 
 /*Begin mobile.*/
@@ -113,9 +112,13 @@ footer {
 @media screen and (min-width: 641px) {
 
     nav ul li {
+        padding: 0.7em;
+        border-top: solid 0.2em black;
+        border-bottom: solid 0.2em black;
         display: inline-block; /*This lists items horizontally and allows them to stretch.*/
         border-radius: 1em;
         box-shadow: 0.5em 0.5em 0.5em black;
+        min-width: 12%;
     }
 
     .desktop {
@@ -132,6 +135,10 @@ footer {
         padding: 10px;
         border-right: 0.3em solid black;
     }
+
+    footer {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
 }
 
 /*End Tablet.*/
@@ -141,6 +148,10 @@ footer {
 @media screen and (min-width: 961px) {
 
     
+    header {
+        background-image: linear-gradient(to right, white, black);
+    }
+
     header img {
         width: auto;
         height: 5em;
@@ -152,8 +163,13 @@ footer {
 
 
     nav {
-        margin-top: -5.1em; /*This moves the nav element above where it would normally be.*/
-        width: 60%;
+        max-width: 50%;
+        padding-top: 0.4em;
+        padding-bottom: 0.1em;
+        background-color: black;
+        border-top: solid 0.2em;
+        width: 57%;
+        margin-top: -5.2em; /*This moves the nav element above where it would normally be.*/
         float: right; /*This floats the nav elements to the right side of the page.*/
     }
 
