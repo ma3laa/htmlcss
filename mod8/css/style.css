@@ -10,7 +10,6 @@ header img {
 
 nav {
     border-bottom: solid 0.3em black;
-    border-radius: 1.0em; /*This rounds the corners of elements.*/
     margin-bottom: 1em; /* This places some space between elements.*/
 
     font-weight: bold;
@@ -49,10 +48,7 @@ figure img {
 }
 
 main {
-    /*background-color: white;
-    border-top: solid 0.3em black;
-    border-bottom: solid 0.3em black;*/
-
+    padding: 1em;
     background-image: linear-gradient(white, gray, black);
     min-height: 400px;
     margin-bottom: 1em; /* This places some space between elements.*/
@@ -82,7 +78,7 @@ main div .right {
 }
 
 footer { 
-    background-image: linear-gradient(to right, white, grey);
+    background-image: linear-gradient(to right, white,grey);
     border-radius: 1.0em; /*This rounds the corners of elements.*/
     text-align: center;
 }
@@ -90,6 +86,10 @@ footer {
 /*Begin mobile.*/
 
 @media screen and (max-width: 640px) {
+
+    nav { 
+        border-radius: 1.0em; /*This rounds the corners of elements.*/
+    }
 
     nav ul li {
         border-radius: 1em;
@@ -112,13 +112,14 @@ footer {
 @media screen and (min-width: 641px) {
 
     nav ul li {
+
         padding: 0.7em;
         border-top: solid 0.2em black;
         border-bottom: solid 0.2em black;
         display: inline-block; /*This lists items horizontally and allows them to stretch.*/
         border-radius: 1em;
         box-shadow: 0.5em 0.5em 0.5em black;
-        min-width: 12%;
+        min-width: 10%;
     }
 
     .desktop {
@@ -149,12 +150,14 @@ footer {
 
     
     header {
-        background-image: linear-gradient(to right, white, black);
+        box-shadow: 0.5em 0.5em 0.5em black;
+        background-image: linear-gradient(to right, white, black, black, black);
     }
 
     header img {
         width: auto;
         height: 5em;
+        padding-top: 2em;
     }
 
     .desktop{
@@ -163,19 +166,20 @@ footer {
 
 
     nav {
-        max-width: 50%;
-        padding-top: 0.4em;
-        padding-bottom: 0.1em;
+        max-width: 57%;
+        padding-top: 0.025em;
+        padding-bottom: 0.02em;
         background-color: black;
         border-top: solid 0.2em;
         width: 57%;
-        margin-top: -5.2em; /*This moves the nav element above where it would normally be.*/
+        margin-top: -6em; /*This moves the nav element above where it would normally be.*/
         float: right; /*This floats the nav elements to the right side of the page.*/
     }
 
     nav ul li {
         display: inline-block; /*This lists items horizontally and allows them to stretch.*/
         border-radius: 1em;
+        
     }
 
     main div .center {
