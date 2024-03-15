@@ -1,0 +1,226 @@
+body {
+    background-image: linear-gradient(white, grey);
+}
+
+header img {
+    width: 100%; /*This stretches the image across the viewport.*/
+    height: auto; /*The height will chnage based on the size of the viewport.*/
+    max-width: 600px;
+}
+
+nav {
+    border-bottom: solid 0.3em black;
+    margin-bottom: 1em; /* This places some space between elements.*/
+
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li{
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0.75em;
+    list-style-type: none; /*This removes bullet points.*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /*This removes the underline from the hyperlink.*/
+    
+}
+
+figure {
+    text-align: center;
+    background-color: white;
+}
+
+figure img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1em;
+    background-image: linear-gradient(white, white, gray);
+    min-height: 400px;
+    margin-bottom: 1em; /* This places some space between elements.*/
+    border-radius: 1.0em; /*This rounds the corners of elements.*/
+}
+
+/*This was for our 3-column layout begin.*/
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+main div .right {
+    float: right;
+    padding-left: 0.6em;
+    width: 25%;
+}
+/*3-column layout end.*/
+
+/*.schedule table begin.*/
+.schedule table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: white;
+}
+
+.schedule caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.schedule th, td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: black;
+    color: white;
+}
+/*.schedule table end.*/
+
+footer { 
+    background-image: linear-gradient(to right, white,grey);
+    border-radius: 1.0em; /*This rounds the corners of elements.*/
+    text-align: center;
+}
+
+/*Begin mobile.*/
+
+@media screen and (max-width: 640px) {
+
+    nav { 
+        border-radius: 1.0em; /*This rounds the corners of elements.*/
+    }
+
+    nav ul li {
+        border-radius: 1em;
+
+    }
+    
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+/*End mobile.*/
+
+/*Begin Tablet.*/
+
+@media screen and (min-width: 641px) {
+
+    nav ul li {
+
+        padding: 0.7em;
+        border-top: solid 0.2em black;
+        border-bottom: solid 0.2em black;
+        display: inline-block; /*This lists items horizontally and allows them to stretch.*/
+        border-radius: 1em;
+        box-shadow: 0.5em 0.5em 0.5em black;
+        min-width: 10%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+
+    main {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+    main div .center {
+        width: 52%;
+        padding: 10px;
+        border-right: 0.3em solid black;
+    }
+
+    footer {
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+}
+
+/*End Tablet.*/
+
+/*Begin Desktop.*/
+
+@media screen and (min-width: 961px) {
+
+    
+    header {
+        box-shadow: 0.5em 0.5em 0.5em black;
+        background-image: linear-gradient(to right, white, black, black, black);
+    }
+
+    header img {
+        width: auto;
+        height: 5em;
+        padding-top: 2em;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+
+    nav {
+        max-width: 57%;
+        padding-top: 0.025em;
+        padding-bottom: 0.02em;
+        background-color: black;
+        border-top: solid 0.2em;
+        width: 57%;
+        margin-top: -6em; /*This moves the nav element above where it would normally be.*/
+        float: right; /*This floats the nav elements to the right side of the page.*/
+    }
+
+    nav ul li {
+        display: inline-block; /*This lists items horizontally and allows them to stretch.*/
+        border-radius: 1em;
+        
+    }
+
+    main div .center {
+        padding: 10px;
+        width: 45%;
+
+        border-left: 0.3em solid black;
+        border-right: 0.3em solid black;
+    }
+        
+    
+    
+}
+
+/*End Desktop.*/
