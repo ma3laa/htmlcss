@@ -33,5 +33,70 @@
     The onclick attribute allows a button to take an action such as executing a JavaScript function.
 
     <input type="submit" id="submit" value="Submit" onclick="calculate()">
+   
+    Javascript is a scripting language that is used to provde extra function to we sites. The execution takes place within the web browser, which is why  it is called a 
+    client-side scripting language.
+
+    JavaScript scripts can be on the web page internally or stored in an external location. Calls to internal or external scripts should be made within the head element.
+
+    External:
+        <script src="text/javascript">//code goes here</script>
+
+    Internal:
+        <script type="text/javascript">//code goes here</script>
+
     
+    Like CSS, JavaScript uses C-style multi-line comments.
+    /*This
+        is
+        Multiline*/
+    
+    Yet JavaScript also includes C-style single line comments:
+    // This is single line!
+
+    Variables are a programmatic way to store information and changes to it.
+    They are created using the "var" declaration.
+
+    var test = 0;
+
+    semicolons must terminate EVERY LINE of JavaScript. (Whitespace does not count)
+
+    The "document.GetElementById()" method allows JavaScript to obtain data from HTML elements according to an element's id.
+
+    In the following example, the test variable is assigned the element by "something".
+
+    test = document.getElementById("something").value;
+
+    Functions allow for the developer to create a sequence of operations to perform within a single call.
+
+    <script type="text/javascript">
+        function calculate(){
+            var test = 0;
+            test = document.getElementById("something").value;
+        }
+    </script>
+
+    <input type="submit" id="submit" value="Submit" onclick="calculate()">
+
+    
+    Math operations can be performed on variables and stored within them or other variables.
+
+    test = test + 1;
+    
+    //The following also does the same thing
+
+    test += 1;
+
+
+    The "alert()" method provides the user a message in an alert box.
+    
+    alert("This is the value of test" + test);
+
+
+    jQuery is a JavaScript library that provides prewritten functions that you can implement in your own projects.
+
+
+    
+
+
 -->
