@@ -94,7 +94,7 @@ main div .right {
     font-weight: bold;
 }
 
-.schedule th, td {
+.schedule th, .schedule td {
     border: 0.1em solid black;
     padding: 0.5em;
     text-align: center;
@@ -105,6 +105,17 @@ main div .right {
     color: white;
 }
 /*.schedule table end.*/
+
+#enrollprice {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+}
+
+#enrollprice td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
 
 footer { 
     background-image: linear-gradient(to right, white,grey);
