@@ -78,4 +78,76 @@
     if (true) {
         //This always works because the statement is true.
     }
+
+
+    Else statements are used in conjunction with if statements and execute when the if state is false.
+
+    if (false) {
+        //This never works because the statement is false.
+    }
+    else {
+        //This always works because the statement is false.
+    }
+
+    Else if statements connect a new condition to be met in the event that the previous if statement returns false.
+
+    if (false) {
+        //This never works because the statement is false.
+    }
+    else if (true) {
+        //This always works because the previous 
+        //if statement is false and 
+        //the current if statement is true.
+    }
+
+    The switch statement offers a set of cases that can be triggered by a variable of a certain value.
+
+    If the variable equals 1, then doThis() will execute.
+    If variable equals 2, then doThat() will execute.
+    The break keyword break allows for breaking out of the switch statement without executing any code below it.
+
+    Switch (variable) {
+        case 1:
+            doThis();
+            break;
+        case 2:
+            doThat();
+            break;
+        default:
+            doSomething()
+    }
+
+    
+    Loops:
+
+    Loops allow for automatic repetition of execution given certain conditions.
+
+    There are three types of JavaScript loops:
+        - While loop
+        - do while loop
+        - for loop
+
+    
+    While loops check a condition before attempting execution.
+
+    while (true) {
+        /*This is an infinite loop. It can never escape because the condition is always true.*/
+
+    }
+
+    Do while loops will always execute once before checking the condition.
+
+    do {
+        /*This will execute only once because the condition is false.*/
+    }
+    while (false);
+
+    For loops execute a certain number of times based on an incrementing variable as compared to a given condition.
+
+    for (var x = 0; x < 5; x++) {
+        /*Generally, this will loop five times.*/
+    }
+
+
 -->
+
