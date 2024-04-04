@@ -1,6 +1,6 @@
 function input(x) {
 
-    //let y = parseFloat(document.getElementById("result").value);
+    //let y = parseFloat(document.getElementById("result").value); 
 
     if (document.getElementById('result').value == 0) //This checks the zero and gets rid of it when necessary.
     {
