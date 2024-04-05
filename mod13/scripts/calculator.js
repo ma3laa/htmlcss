@@ -1,9 +1,7 @@
 function input(x) {
 
-    //let y = parseFloat(document.getElementById("result").value); 
-
-    if (document.getElementById('result').value == 0) //This checks the zero and gets rid of it when necessary.
-    {
+    if (document.getElementById('result').value == 0) { //This checks the zero and gets rid of it when necessary.
+       
         document.getElementById('result').value == x;
     }
     else {
@@ -47,3 +45,4 @@ function square() {
 
 
 }
+
