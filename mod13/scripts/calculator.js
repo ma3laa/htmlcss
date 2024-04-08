@@ -24,9 +24,9 @@ function input(x) {
 
 function operandCheck() {
     if(document.getElementById("operand").value == "") {
-        document.getElementById("operand").value = document.getElementById("result").value;
 
-        document.getElementById("result").value = 0; //This is temporary.
+        document.getElementById("operand").value = document.getElementById("result").value;
+        document.getElementById("equivalent").value = 1;
     }
     else {
 
@@ -57,6 +57,7 @@ function operatorCheck() {
 
     document.getElementById("operand").value = a;
     document.getElementById("result").value = a;
+    document.getElementById("equivalent").value = 1;
 }
 
 
@@ -87,6 +88,7 @@ function equals() {
     operatorCheck(parseInt(document.getElementById("operation").value));
     document.getElementById("result").value = document.getElementById("operand").value;
     document.getElementById("operand").value = "";
+    document.getElementById("equivalent").value = 1;
 
 
 }
@@ -97,6 +99,7 @@ function allClear() {
     document.getElementById("result").value = 0;
     document.getElementById("operand").value = "";
     document.getElementById("operation").value = 0;
+    document.getElementById("equivalent").value = 0;
 
 }
 
