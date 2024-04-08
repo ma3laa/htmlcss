@@ -2,7 +2,7 @@
 
 <html lang="en">
     <head>
-        <title>Enroll Page</title>
+        <title>Calculator</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
@@ -28,6 +28,10 @@
         </nav>
 
         <main>
+            <input id="operation" value="0" type="hidden"> <!--These hidden inputs contain our data.-->
+            <input id="operand" value="" type="hidden"> <!--This will store the first number typed in.-->
+            <input id="equivalent" value="0" type="hidden">
+
             <table>
                 <caption><input id="result" type="text" value="0" readonly></caption>
 
