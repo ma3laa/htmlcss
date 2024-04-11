@@ -13,13 +13,47 @@ function input(x) {
 
     equivalentCheck();
 
-    if (document.getElementById('result').value == 0) { //This checks the zero and gets rid of it when necessary.
-        document.getElementById('result').value = x;
+    let y = parseFloat(document.getElementById("result").value);
+
+    if (document.getElementById("decimalVar").value == 0) {
+
+        x += y * 10; //multiply the text input by 10 and add the value of x.
+
+        document.getElementById("result").vaalue = x; //return x to the text output.
+
     }
-    else {
-        document.getElementById('result').value += x;
+    else { //If decimal is true
+
+        let decimalCount = parseInt(document.getElementById("decimalVar").value);
+        
+        if (decimalCount == 1) {
+
+            x *= 1/10; //We are using math to place the decimal point.
+            y += x;
+            document.getElementById("result").value = y;
+        }
+        else {
+            document.getElementById("result").value += x;
+        }
+
+        decimalCount++;
+
+        document.getElementById("decimalVar").value = decimalCount;
     }
 
+}
+
+function decimalPoint() {
+
+    if (document.getElementById("decimalVar").value == 0) { //This prevents multipe decimals.
+
+        document.getElementById("decimalVar").value == 1;
+
+    }
+
+    if (parseInt(document.getElementById("operation").value)) { //If this is an empty string, it will return false.
+        document.getElementById("result").value = 0;
+    }
 }
 
 function operandCheck() {
