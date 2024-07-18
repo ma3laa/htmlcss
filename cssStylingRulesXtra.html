@@ -31,9 +31,13 @@
     
     GRIDS
 
-    grid-template-columns
-    grid-template-rows
-    grid-template
+    display: grid;
+
+    grid-template-columns: 100px 50% 200px; //1st 2nd 3rd column width
+    grid-template-rows: 40% 50% 50px; //1st 2nd 3rd row width
+    grid-template: 40% 50% 50px / 100px 50% 200px; //does both rows and columns in that order l>r
+    fractions | grid-template: 1fr 1fr 1fr / 3fr 50% 1fr; //fractions of the total space
+    repeat | grid-template: repeat(3, 1fr) / 3fr 50% 1fr; //if theres 3 in a row or 2 you can repeat the saame ones with repeat, then amount of repetitions
     grid-template-area
     row-gap / column-gap / gap
     grid-row-start / grid-row-end
