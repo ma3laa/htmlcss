@@ -86,10 +86,46 @@
 
 
 
+    Justify & Align "Self":
+
+    justify-self specifies how an individual element should position itself with respect to the row axis. This property will override justify-items for any item on which it is declared.
+
+    align-self specifies how an individual element should position itself with respect to the column axis. This property will override align-items for any item on which it is declared.
+
+
+
+    Grid Auto Flow:
+
+
+    In addition to setting the dimensions of implicitly-added rows and columns, we can specify the order in which they are rendered.
+
+    grid-auto-flow specifies whether new elements should be added to rows or columns, and is declared on grid containers.
+
+    grid-auto-flow accepts these values:
+
+    row — specifies the new elements should fill rows from left to right and create new rows when there are too many elements (default)
+    column — specifies the new elements should fill columns from top to bottom and create new columns when there are too many elements
+    dense — this keyword invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added
+    You can pair row or column with dense, like this: grid-auto-flow: row dense;.
 
 
 
 
+
+    Advanced Grid Review:
+
+
+    grid-template-areas specifies grid named grid areas
+    grid layouts are two-dimensional: they have a row, or inline, axis and a column, or block, axis.
+    justify-items specifies how individual elements should spread across the row axis
+    justify-content specifies how groups of elements should spread across the row axis
+    justify-self specifies how a single element should position itself with respect to the row axis
+    align-items specifies how individual elements should spread across the column axis
+    align-content specifies how groups of elements should spread across the column axis
+    align-self specifies how a single element should position itself with respect to the column axis
+    grid-auto-rows specifies the height of rows added implicitly to the grid
+    grid-auto-columns specifies the width of columns added implicitly to the grid
+    grid-auto-flow specifies in which direction implicit elements should be created
 
 
 
