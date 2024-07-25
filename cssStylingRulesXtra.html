@@ -154,9 +154,27 @@
 
 
 
+    the name="viewport" attribute: tells the browser to display the web page at the same width as its screen
+    the content attribute: defines the values for the <meta> tag, including width and initial-scale
+    the width=device-width key-value pair: controls the size of the viewport in which it sets the width of the viewport to equal the width of the device
+    the initial-scale=1 key-value pair: sets the initial zoom level
 
 
 
+    Media queries:
+
+    
+@media only screen and (max-width: 480px) {
+  .page-title {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .gallery-item .thumbnail {
+    width: 95%;
+  }
+}
 
 
 
